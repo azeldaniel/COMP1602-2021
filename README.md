@@ -12,4 +12,16 @@ Tutorial time was used for a lecture due to lost lecture hours because of thw tw
 
 ## Week 3
 
-introduction to two dimensional arrays, and their uses with structs and functions.
+Practice with two dimensional arrays, and their uses with structs and functions.
+
+## Week 4
+
+Tutorial time was used the coursework exam.
+
+## Week 5
+
+Tutorial time was used for a lecture to finish up course content.
+
+## Week 6
+
+Practice with random number generation, c-strings, binary files and queue simulations.
