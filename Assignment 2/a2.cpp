@@ -3,6 +3,7 @@
 
 using namespace std;
 
+// 1 (8 marks)
 struct Tile
 {
     int data;
@@ -35,6 +36,7 @@ int main()
         cout << "0. Exit" << endl;
         cin >> option;
 
+        // 3 a (12 marks)
         if (option == 1)
         {
             Board board = loadAndMakeBoard();
@@ -77,6 +79,7 @@ int main()
             }
         }
 
+        // 3 b (3 marks)
         if (option == 2)
         {
             cout << "Wins: " << wins << endl;
@@ -89,12 +92,14 @@ int main()
     return 0;
 }
 
+// 2 a (3 marks)
 Tile makeTile(int data, bool isEditable)
 {
     Tile tile = {data, isEditable};
     return tile;
 }
 
+// 2 b (10 marks)
 Board loadAndMakeBoard()
 {
     ifstream file;
@@ -121,6 +126,7 @@ Board loadAndMakeBoard()
     return b;
 }
 
+// 2 c (4 marks)
 void printBoard(Board board)
 {
     for (int row = 0; row < 4; row++)
@@ -140,11 +146,21 @@ void printBoard(Board board)
     }
 }
 
+// 2 d (5 marks)
 bool isUniqueForQuadrant(Board board, int row, int column, int guess)
 {
     if (row < 2 && column < 2)
     {
         return !(board.tiles[0][0].data == guess || board.tiles[0][1].data == guess || board.tiles[1][0].data == guess || board.tiles[1][1].data == guess);
+
+        // Alternative way
+        // for(int r = 0; r < 2; r++){
+        //     for(int c = 0; c < 2; c++){
+        //         if(board.tiles[r][c].data == guess)
+        //             return false;
+        //     }
+        // }
+        // return true;
     }
     else if (row < 2 && column >= 2)
     {
@@ -160,6 +176,7 @@ bool isUniqueForQuadrant(Board board, int row, int column, int guess)
     }
 }
 
+// 2 e (8 marks)
 bool isValidGuess(Board board, int row, int column, int guess)
 {
     if (!board.tiles[row][column].isEditable || guess > 4 || guess < 1)
@@ -186,6 +203,7 @@ bool isValidGuess(Board board, int row, int column, int guess)
     return isUniqueForQuadrant(board, row, column, guess);
 }
 
+// 2 f (5 marks)
 bool isBoardComplete(Board board)
 {
     for (int row = 0; row < 4; row++)
