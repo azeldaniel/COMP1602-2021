@@ -1,3 +1,7 @@
+*Notice: This repo will be archived on July 30th, 2021. All solutions will be removed.*
+
+---
+
 # COMP1602-2021
 
 This repository contains Computer Programming II lab material for Semester 3, 2020-2021 at the University of the West Indies, St. Augustine. Note that this repository was created for code sharing convenience, and all solutions may be redacted at the end of the academic year in 2021.
@@ -8,7 +12,7 @@ Introduction to Structs in C++. Functions involving the use of structs as well a
 
 ## Week 2
 
-Tutorial time was used for a lecture due to lost lecture hours because of thw two holidays.
+Tutorial time was used for a lecture due to lost lecture hours because of the two holidays.
 
 ## Week 3
 
