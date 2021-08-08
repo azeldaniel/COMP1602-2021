@@ -1,4 +1,4 @@
-*Notice: This repo will be archived on July 30th, 2021. All solutions will be removed.*
+*Notice: This repo was archived on July 30th, 2021.*
 
 ---
 
